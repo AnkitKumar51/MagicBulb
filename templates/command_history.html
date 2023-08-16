@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Command History</title>
+</head>
+<body>
+    <h1>Command History</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Command</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for command in commands %}
+        <tr>
+            <td>{{ command[0] }}</td>
+            <td>{{ command[1] }}</td>
+            <td>{{ command[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
